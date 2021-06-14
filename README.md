@@ -24,4 +24,4 @@ The model predicts the chance of a certain customer buying a product, using Age 
 
     $ python rest_post.py URL age salary
  > Change URL for the previously copied Ngrok URL.
- > You can specify any **Int** value for _**Age**_ and _**Salary**_, but for better results keep these within the range of 18~60 for age, and 20,000~60,000 for salary.
+ > You can specify any **Int** value for _**Age**_ and _**Salary**_, but for better results keep these within the range of 18-60 for age, and 20,000-60,000 for salary.

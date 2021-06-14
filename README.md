@@ -12,7 +12,7 @@ The model predicts the chance of a certain customer buying a product, using Age 
 
 ## Installing dependencies
 
-    $ pip install -r requirements
+    $ pip install -r requirements.txt
 
 ## Running the server
 

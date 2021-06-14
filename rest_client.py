@@ -4,7 +4,6 @@ import numpy as np
 import pickle
 import os
 
-
 path = os.path.dirname(os.path.abspath(__file__))
 
 classifier_colab = pickle.load(open(path+'\classifier.pickle','rb'))
@@ -22,6 +21,6 @@ def customer_behavior():
     print(salary)
     pred_proba = classifier_colab.predict_proba(scaler_colab.transform(np.array([[age,salary]])))[:,1]
     print(pred_proba)
-    return "The prediction is {}".format(pred_proba)
+    return f"The client have a {pred_proba * 100}% chance of buying."
 
 app.run()

@@ -1,8 +1,12 @@
 import json
 import requests
+import sys
 
-url = 'http://23c1cdb0d58e.ngrok.io' +'/predict'
+url, age, salary = sys.argv[1], sys.argv[2], sys.argv[3]
 
-request_data = json.dumps({'age':42,'salary':40000})
-response = requests.post(url,request_data)
+endpoint = url + '/predict'
+
+request_data = json.dumps({'age':age,'salary':salary})
+
+response = requests.post(endpoint, request_data)
 print (response.text)

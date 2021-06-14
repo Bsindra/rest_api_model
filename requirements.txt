@@ -1,0 +1,6 @@
+flask_ngrok
+flask
+requests
+numpy
+pickle-mixin
+sklearn

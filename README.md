@@ -1,6 +1,6 @@
 # Rest Api Model
 
-A little Python project that publishes, using Ngrok, an ML model trained with Tensorflow and serialized with Pickle.
+Python application that publishes, using Flask and Ngrok, an ML model trained with Tensorflow and serialized with Pickle.
 
 The model predicts the chance of a certain customer buying a product, using Age and Salary as parameters, it was trained with an public dataset.
 
